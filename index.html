@@ -1,20 +1,121 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ristorante dai mille sapori</title>
+    <title>Italian Restaurant</title>
     <style>
-        body { 
-            font-family: sans-serif; 
-            text-align: center; 
-            padding: 50px; 
-            transition: background-color 0.8s ease; 
-            background-color: #f0f2f5;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
+        header {
+            background-color: #A52A2A;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #FF4500;
+        }
+        .hero {
+            background-image: url('hero-image.jpg');
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .menu, .about, .contact {
+            padding: 20px;
+        }
+        .menu h2, .about h2, .contact h2 {
+            color: #A52A2A;
+        }
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .menu li {
+            margin: 5px 0;
+        }
+        footer {
+            background-color: #A52A2A;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Benvenuti al Ristorante dai mille sapor</h1>
-    <p></p>
+    <header>
+        <h1>Welcome to Our Italian Restaurant</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="hero">
+        <h2>Experience the Taste of Italy</h2>
+    </div>
+    <div class="menu" id="menu">
+        <h2>Our Menu</h2>
+        <h3>Antipasti</h3>
+        <ul>
+            <li>Bruschetta</li>
+            <li>Caprese Salad</li>
+        </ul>
+        <h3>Pasta</h3>
+        <ul>
+            <li>Spaghetti Carbonara</li>
+            <li>Fettuccine Alfredo</li>
+        </ul>
+        <h3>Main Courses</h3>
+        <ul>
+            <li>Margherita Pizza</li>
+            <li>Osso Buco</li>
+        </ul>
+        <h3>Desserts</h3>
+        <ul>
+            <li>Tiramisu</li>
+            <li>Panna Cotta</li>
+        </ul>
+        <h3>Beverages</h3>
+        <ul>
+            <li>Italian Wine</li>
+            <li>Espresso</li>
+        </ul>
+        <h3>Special Dishes</h3>
+        <ul>
+            <li>Risotto alla Milanese</li>
+            <li>Branzino al Sale</li>
+        </ul>
+    </div>
+    <div class="about" id="about">
+        <h2>About Us</h2>
+        <p>We offer authentic Italian cuisine made with the freshest ingredients. Our chefs have years of experience and are passionate about bringing the best of Italy to your table.</p>
+    </div>
+    <div class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@italianrestaurant.com</p>
+        <p>Phone: (555) 123-4567</p>
+    </div>
+    <footer>
+        <p>&copy; 2026 Italian Restaurant. All rights reserved.</p>
+    </footer>
 </body>
 </html>
